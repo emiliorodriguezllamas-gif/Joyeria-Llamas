@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Necesario para que funcione en Electron (archivos locales)
+  base: process.env.NODE_ENV === 'production' ? '/Joyeria-Llamas/' : './',
 });
